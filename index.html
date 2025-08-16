@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
     <title>Document</title>
 </head>
+
 <body>
-<section></section>
-<section id="audio-player" class="fixed left-0 bottom-0 z-100 w-full h-[100px] flex justify-between items-center p-5 bg-gray-600 *:border *:border-b-blue-200">
-    <div id="mini-info-music" class="flex justify-center items-center gap-2">
-        <img src="" alt="audio picture" class="w-[70px] h-[70px]  border">
-        <div class="text-sm text-white">
-            <p>music name</p>
-            <p class="text-gray-400">artist name</p>
+    <section></section>
+    <section id="audio-player" class="fixed left-0 bottom-0 z-100 w-full h-[75px] flex justify-center lg:justify-between items-center p-5 bg-gray-800">
+        <div id="mini-info-music" class="hidden lg:flex justify-center items-center gap-2">
+            <img src="" alt="audio picture" class="w-[60px] h-[60px]  border">
+            <div class="text-sm text-white">
+                <p>music name</p>
+                <p class="text-gray-400">artist name</p>
+            </div>
         </div>
-    </div>
-    <div id="player-music">sss</div>
-    <div id="setting-music">ddd</div>
-</section>
+        <div id="player-music">
+            <div class="flex justify-center gap-4 *:cursor-pointer">
+                <img src="icon/svgexport-31.svg" alt="">
+                <img src="icon/svgexport-32.svg" alt="">
+                <img src="icon/svgexport-33.svg" alt="">
+                <img src="icon/svgexport-34.svg" alt="">
+                <img src="icon/svgexport-36.svg" alt="">
+            </div>
+            <div class="flex justify-center items-center gap-3 text-gray-300 text-sm ">
+                <p>1:01</p>
+                <div class="group w-[240px] sm:w-[380px] lg:w-[420px] h-[6px] bg-gray-600 rounded-3xl transition duration-500 ease-in-out ">
+                    <span
+                        class="group flex relative w-[10%] h-full bg-gray-300 group-hover:bg-red-700 rounded-3xl transition-base">
+                        <span
+                            class="opacity-0 group-hover:opacity-100 absolute -right-1 top-[-3.5px] w-[12px] h-[12px] rounded-full bg-gray-300 transition-base"></span>
+                    </span>
+                </div>
+                <p>1:01</p>
+            </div>
+        </div>
+        <div id="setting-music" class="hidden lg:flex justify-center items-center gap-2.5 *:cursor-pointer">
+            <img src="icon/svgexport-40.svg" alt="">
+            <input type="range" min="0" max="100" value="30" class="w-[100px] h-[6px] appearance-none rounded-3xl bg-gray-600 cursor-pointer [&::-appearance-none w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 hover:bg-gray-700">
+        </div>
+    </section>
 </body>
+
 </html>

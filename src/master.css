@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+
+@layer base {}
+
+@layer utilities {
+    .transition-base {
+        @apply transition-all duration-300 ease-in-out;
+    }
+}
+
+@layer components {}
