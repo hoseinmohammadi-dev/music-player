@@ -8,39 +8,230 @@
     <title>Document</title>
 </head>
 
-<body>
-    <section></section>
-    <section id="audio-player" class="fixed left-0 bottom-0 z-100 w-full h-[75px] flex justify-center lg:justify-between items-center p-5 bg-gray-800">
+<body class="bg-gray-900">
+    <main class="flex relative ">
+        <section id="menu"
+            class="hidden lg:flex w-[20%] h-[calc(100vh-75px)] sticky top-0 flex-col items-start p-5 bg-black">
+            <img src="icon/svgexport-1.svg" alt="">
+            <div class="w-full text-gray-300 mt-8 space-y-4">
+                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                    <img src="icon/svgexport-2.svg" alt="">
+                    <p>Home</p>
+                </div>
+                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                    <img src="icon/svgexport-4.svg" alt="">
+                    <p>Browse</p>
+                </div>
+                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                    <img src="icon/svgexport-6.svg" alt="">
+                    <p>Search</p>
+                </div>
+                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                    <img src="icon/svgexport-8.svg" alt="">
+                    <p>Event</p>
+                </div>
+                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                    <img src="icon/svgexport-11.svg" alt="">
+                    <p>Liked songs</p>
+                </div>
+                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                    <img src="icon/svgexport-13.svg" alt="">
+                    <p>Podcasts</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-section" class="w-full lg:w-[80%] bg-gray-950 p-5">
+            <div id="play-list" class="text-gray-300">
+                <h2 class="text-3xl mb-4">Playlist</h2>
+                <div class="flex gap-4 *:w-[200px] *:cursor-pointer *:hover:opacity-70">
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="play-list2" class="text-gray-300 mt-10">
+                <h2 class="text-3xl mb-4">Best New Releases</h2>
+                <div class="flex gap-4 *:w-[200px] *:cursor-pointer *:hover:opacity-70">
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="icon/d93b93fbc781362.jpg" alt="">
+                        <figcaption>music name</figcaption>
+                    </figure>
+                </div>
+
+                <div  id="top-for-your" class="text-gray-300 mt-10">
+                    <h2 class="text-3xl mb-4">Top For Your</h2>
+                    <div class="flex justify-start flex-wrap *:hover:bg-gray-900 *:p-2">
+                        <div class="flex w-[100%] md:w-[40%] justify-between lg:mr-10">
+                            <div class="flex gap-2">
+                                <img src="icon/d93b93fbc781362.jpg" alt="" class="w-15">
+                                <div>
+                                    <p>music name</p>
+                                    <p>artist name</p>
+                                </div>
+                            </div>
+                            <img src="icon/svgexport-36.svg" alt="" class="cursor-pointer">
+                        </div>
+                        <div class="flex w-[100%] md:w-[40%] justify-between">
+                            <div class="flex gap-2">
+                                <img src="icon/d93b93fbc781362.jpg" alt="" class="w-15">
+                                <div>
+                                    <p>music name</p>
+                                    <p>artist name</p>
+                                </div>
+                            </div>
+                            <img src="icon/svgexport-36.svg" alt="" class="cursor-pointer">
+                        </div>
+                        <div class="flex w-[100%] md:w-[40%] justify-between lg:mr-10">
+                            <div class="flex gap-2">
+                                <img src="icon/d93b93fbc781362.jpg" alt="" class="w-15">
+                                <div>
+                                    <p>music name</p>
+                                    <p>artist name</p>
+                                </div>
+                            </div>
+                            <img src="icon/svgexport-36.svg" alt="" class="cursor-pointer">
+                        </div>
+                        <div class="flex w-[100%] md:w-[40%] justify-between">
+                            <div class="flex gap-2">
+                                <img src="icon/d93b93fbc781362.jpg" alt="" class="w-15">
+                                <div>
+                                    <p>music name</p>
+                                    <p>artist name</p>
+                                </div>
+                            </div>
+                            <img src="icon/svgexport-36.svg" alt="" class="cursor-pointer">
+                        </div>
+                        <div class="flex w-[100%] md:w-[40%] justify-between">
+                            <div class="flex gap-2">
+                                <img src="icon/d93b93fbc781362.jpg" alt="" class="w-15">
+                                <div>
+                                    <p>music name</p>
+                                    <p>artist name</p>
+                                </div>
+                            </div>
+                            <img src="icon/svgexport-36.svg" alt="" class="cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="play-list3" class="text-gray-300 mt-10 mb-[100px]">
+                    <h2 class="text-3xl mb-4">Hot Track</h2>
+                    <div class="flex gap-4 *:w-[200px] *:cursor-pointer *:hover:opacity-70">
+                        <figure>
+                            <img src="icon/d93b93fbc781362.jpg" alt="">
+                            <figcaption>music name</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="icon/d93b93fbc781362.jpg" alt="">
+                            <figcaption>music name</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="icon/d93b93fbc781362.jpg" alt="">
+                            <figcaption>music name</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="icon/d93b93fbc781362.jpg" alt="">
+                            <figcaption>music name</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="icon/d93b93fbc781362.jpg" alt="">
+                            <figcaption>music name</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="icon/d93b93fbc781362.jpg" alt="">
+                            <figcaption>music name</figcaption>
+                        </figure>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- fixed player start -->
+    <section id="audio-player"
+        class="fixed left-0 bottom-0 z-[100] w-full h-[75px] flex justify-center lg:justify-between items-center p-5 bg-gray-800">
         <div id="mini-info-music" class="hidden lg:flex justify-center items-center gap-2">
-            <img src="" alt="audio picture" class="w-[60px] h-[60px]  border">
+            <img src="" alt="audio picture" class="w-[60px] h-[60px] border">
             <div class="text-sm text-white">
                 <p>music name</p>
                 <p class="text-gray-400">artist name</p>
             </div>
         </div>
+
         <div id="player-music">
-            <div class="flex justify-center gap-4 *:cursor-pointer">
+            <div class="flex justify-center gap-4 cursor-pointer">
                 <img src="icon/svgexport-31.svg" alt="">
                 <img src="icon/svgexport-32.svg" alt="">
                 <img src="icon/svgexport-33.svg" alt="">
                 <img src="icon/svgexport-34.svg" alt="">
                 <img src="icon/svgexport-36.svg" alt="">
             </div>
-            <div class="flex justify-center items-center gap-3 text-gray-300 text-sm ">
+            <div class="flex justify-center items-center gap-3 text-gray-300 text-sm">
                 <p>1:01</p>
-                <div class="group w-[240px] sm:w-[380px] lg:w-[420px] h-[6px] bg-gray-600 rounded-3xl transition duration-500 ease-in-out ">
+                <div
+                    class="group w-[240px] sm:w-[380px] lg:w-[420px] h-[6px] bg-gray-600 rounded-3xl transition duration-500 ease-in-out">
                     <span
-                        class="group flex relative w-[10%] h-full bg-gray-300 group-hover:bg-red-700 rounded-3xl transition-base">
+                        class="flex relative w-[10%] h-full bg-gray-300 group-hover:bg-red-700 rounded-3xl transition duration-300 ease-in-out">
                         <span
-                            class="opacity-0 group-hover:opacity-100 absolute -right-1 top-[-3.5px] w-[12px] h-[12px] rounded-full bg-gray-300 transition-base"></span>
+                            class="opacity-0 group-hover:opacity-100 absolute -right-1 top-[-3.5px] w-[12px] h-[12px] rounded-full bg-gray-300 transition duration-300 ease-in-out"></span>
                     </span>
                 </div>
                 <p>1:01</p>
             </div>
         </div>
-        <div id="setting-music" class="hidden lg:flex justify-center items-center gap-2.5 *:cursor-pointer">
+
+        <div id="setting-music" class="hidden lg:flex justify-center items-center gap-2.5 cursor-pointer">
             <img src="icon/svgexport-40.svg" alt="">
-            <input type="range" min="0" max="100" value="30" class="w-[100px] h-[6px] appearance-none rounded-3xl bg-gray-600 cursor-pointer [&::-appearance-none w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 hover:bg-gray-700">
+            <input type="range" min="0" max="100" value="30" class="w-[100px] h-[6px] appearance-none rounded-3xl bg-gray-600 cursor-pointer
+                [&::-webkit-slider-thumb]:appearance-none
+                [&::-webkit-slider-thumb]:w-3
+                [&::-webkit-slider-thumb]:h-3
+                [&::-webkit-slider-thumb]:rounded-full
+                [&::-webkit-slider-thumb]:bg-gray-300
+                [&::-webkit-slider-thumb]:transition-all
+                [&::-webkit-slider-thumb]:duration-300
+                [&::-webkit-slider-thumb]:hover:bg-gray-700">
         </div>
     </section>
 </body>
