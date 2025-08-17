@@ -7,11 +7,12 @@ const audio = document.querySelector("#main-audio")
 const playBtn = document.querySelector("#play-pause")
 const prevBtn = document.querySelector("#prev")
 const nextBtn = document.querySelector("#next")
+const reapet = document.querySelector('#reapet')
+const likeBtn = document.querySelector('#like')
 
 const progressBar = document.querySelector("#progress-bar")
 const progressDetail = document.querySelector("#progress-detail")
 
-const reapet = document.querySelector('#reapet')
 
 let index = 1;
 ////mini fix info music start////
@@ -166,5 +167,18 @@ audio.addEventListener('ended', () => {
         }, 400);
     }
 });
-
 ////reapet btn end///
+
+
+////like start ////
+let likeFlag = 1
+
+likeBtn.addEventListener('click', () => {
+    if (likeFlag % 2) {
+        likeBtn.src = 'icon/svgexport-12.svg'
+    } else {
+        likeBtn.src = 'icon/svgexport-36.svg'
+    }
+    likeFlag++
+})
+////like end ////
