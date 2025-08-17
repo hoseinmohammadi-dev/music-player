@@ -9,9 +9,17 @@ const prevBtn = document.querySelector("#prev")
 const nextBtn = document.querySelector("#next")
 const reapet = document.querySelector('#reapet')
 const likeBtn = document.querySelector('#like')
+const likeBtns = document.querySelectorAll('.like-btn')
+
 
 const progressBar = document.querySelector("#progress-bar")
 const progressDetail = document.querySelector("#progress-detail")
+
+const volumeSlider = document.querySelector("#setting-music input");
+const volumeBtn = document.querySelector("#setting-music img");
+
+const allFigures = document.querySelectorAll("#play-list figure, #play-list2 figure, #play-list3 figure , #top-for-your > div > div");
+
 
 
 let index = 1;
@@ -159,7 +167,7 @@ audio.addEventListener('ended', () => {
         }
         loadData(index);
         playSong();
-    }else{
+    } else {
         playBtn.src = 'icon/svgexport-49.svg'
 
         setTimeout(() => {
@@ -171,14 +179,51 @@ audio.addEventListener('ended', () => {
 
 
 ////like start ////
-let likeFlag = 1
-
-likeBtn.addEventListener('click', () => {
-    if (likeFlag % 2) {
-        likeBtn.src = 'icon/svgexport-12.svg'
+likeBtn.addEventListener("click", () => {
+    if (likeBtn.dataset.liked === "true") {
+        likeBtn.src = "icon/svgexport-36.svg";
+        likeBtn.dataset.liked = "false";
     } else {
-        likeBtn.src = 'icon/svgexport-36.svg'
+        likeBtn.src = "icon/svgexport-12.svg";
+        likeBtn.dataset.liked = "true";
     }
-    likeFlag++
-})
+});
 ////like end ////
+
+////like2 start ////
+likeBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        if (btn.dataset.liked === "true") {
+            btn.src = "icon/svgexport-36.svg";
+            btn.dataset.liked = "false";
+        } else {
+            btn.src = "icon/svgexport-12.svg";
+            btn.dataset.liked = "true";
+        }
+    });
+});
+////like2 end ////
+
+///volumeSlider start////
+volumeSlider.addEventListener('input', () => {
+
+    let volumeValue = volumeSlider.value / 100;
+    audio.volume = volumeValue;
+})
+///volumeSlider end////
+
+
+
+
+////play by click start///
+allFigures.forEach((fig, i) => {
+    fig.addEventListener("click", (e) => {
+        if(e.target.classList.contains("like-btn")) return;
+        index = i + 1;
+        loadData(index);
+        playSong();
+    });
+});
+////play by click end///
+
+
