@@ -180,35 +180,32 @@
     </main>
 
     <!-- fixed player start -->
-    <section id="audio-player"
-        class="fixed left-0 bottom-0 z-[100] w-full h-[75px] flex justify-center lg:justify-between items-center p-5 bg-gray-800">
-        <div id="mini-info-music" class="hidden lg:flex justify-center items-center gap-2">
-            <img src="icon/d93b93fbc781362.jpg" alt="audio picture" class="w-[60px] h-[60px]">
+    <section id="audio-player" class="fixed left-0 bottom-0 z-[100] w-full h-[75px] flex justify-center lg:justify-between items-center p-5 bg-gray-800">
+
+        <div id="mini-info-music" class="hidden lg:flex justify-start items-center gap-2 w-[270px]">
+            <img src="icon/d93b93fbc781362.jpg" alt="audio picture" id="info-img" class="w-[60px] h-[60px]">
             <div class="text-sm text-white">
-                <p>music name</p>
-                <p class="text-gray-400">artist name</p>
+                <p id="music-name">music name</p>
+                <p id="music-artist" class="text-gray-400">artist name</p>
             </div>
         </div>
 
         <div id="player-music">
             <div class="flex justify-center gap-4 cursor-pointer">
-                <img src="icon/svgexport-31.svg" alt="">
-                <img src="icon/svgexport-32.svg" alt="">
-                <img src="icon/svgexport-33.svg" alt="">
-                <img src="icon/svgexport-34.svg" alt="">
+                <img id="reapet" src="icon/svgexport-31.svg" alt="">
+                <img id="prev" src="icon/svgexport-32.svg" alt="">
+                <img id="play-pause" src="icon/svgexport-49.svg" alt="">
+                <img id="next" src="icon/svgexport-34.svg" alt="">
                 <img src="icon/svgexport-36.svg" alt="">
             </div>
-            <div class="flex justify-center items-center gap-3 text-gray-300 text-sm">
-                <p>1:01</p>
-                <div
-                    class="group w-[240px] sm:w-[380px] lg:w-[420px] h-[6px] bg-gray-600 rounded-3xl transition duration-500 ease-in-out">
-                    <span
-                        class="flex relative w-[10%] h-full bg-gray-300 group-hover:bg-red-700 rounded-3xl transition duration-300 ease-in-out">
-                        <span
-                            class="opacity-0 group-hover:opacity-100 absolute -right-1 top-[-3.5px] w-[12px] h-[12px] rounded-full bg-gray-300 transition duration-300 ease-in-out"></span>
+            <div  class="flex justify-center items-center gap-3 text-gray-300 text-sm">
+                <p id="duration-time">1:01</p>
+                <div id="progress-detail" class="group w-[240px] sm:w-[380px] lg:w-[420px] h-[6px] bg-gray-600 rounded-3xl transition duration-500 ease-in-out ">
+                    <span id="progress-bar" class="flex relative w-0 h-full bg-gray-300 group-hover:bg-red-700 rounded-3xl transition duration-300 ease-in-out">
+                        <span class="opacity-0 group-hover:opacity-100 absolute -right-1 top-[-3.5px] w-[12px] h-[12px] rounded-full bg-gray-300 transition duration-300 ease-in-out"></span>
                     </span>
                 </div>
-                <p>1:01</p>
+                <p id="final-time">1:01</p>
             </div>
         </div>
 
@@ -224,7 +221,9 @@
                 [&::-webkit-slider-thumb]:duration-300
                 [&::-webkit-slider-thumb]:hover:bg-gray-700">
         </div>
+
     </section>
+    <audio src="" id="main-audio"></audio>
 </body>
 <script src="js/playList.js"></script>
 <script src="js/script.js"></script>
