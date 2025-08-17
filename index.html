@@ -208,7 +208,6 @@
     <!-- fixed player start -->
     <section id="audio-player"
         class="fixed left-0 bottom-0 z-[100] w-full h-[75px] flex justify-center lg:justify-between items-center p-5 bg-gray-800">
-
         <div id="mini-info-music" class="hidden lg:flex justify-start items-center gap-2 w-[270px]">
             <img src="icon/d93b93fbc781362.jpg" alt="audio picture" id="info-img" class="w-[60px] h-[60px]">
             <div class="text-sm text-white">
@@ -216,7 +215,6 @@
                 <p id="music-artist" class="text-gray-400">artist name</p>
             </div>
         </div>
-
         <div id="player-music">
             <div class="flex justify-center gap-4 cursor-pointer">
                 <img id="reapet" src="icon/svgexport-31.svg" alt="">
@@ -238,20 +236,10 @@
                 <p id="final-time">1:01</p>
             </div>
         </div>
-
         <div id="setting-music" class="hidden lg:flex items-center gap-2.5 mt-[30px]">
             <img src="icon/svgexport-40.svg" alt="">
-            <input type="range" min="0" max="100" value="40" class="w-[100px] h-[5.5px] appearance-none rounded-3xl bg-gray-600 cursor-pointer
-                [&::-webkit-slider-thumb]:appearance-none
-                [&::-webkit-slider-thumb]:w-3
-                [&::-webkit-slider-thumb]:h-3
-                [&::-webkit-slider-thumb]:rounded-full
-                [&::-webkit-slider-thumb]:bg-gray-100
-                [&::-webkit-slider-thumb]:transition-all
-                [&::-webkit-slider-thumb]:duration-300
-                [&::-webkit-slider-thumb]:hover:bg-red-700">
+            <input type="range" min="0" max="100" value="40" class="w-[100px] h-[5.5px] appearance-none rounded-3xl bg-gray-600 cursor-pointer">
         </div>
-
     </section>
     <audio src="" id="main-audio"></audio>
 </body>
