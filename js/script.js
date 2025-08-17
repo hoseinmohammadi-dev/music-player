@@ -158,6 +158,12 @@ audio.addEventListener('ended', () => {
         }
         loadData(index);
         playSong();
+    }else{
+        playBtn.src = 'icon/svgexport-49.svg'
+
+        setTimeout(() => {
+            progressBar.style.width = 0 + '%';
+        }, 400);
     }
 });
 
