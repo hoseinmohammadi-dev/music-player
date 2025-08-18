@@ -8,7 +8,7 @@
 
 ## 📖 About  
 
-A responsive **music player web app** built with **HTML, TailwindCSS, Bootstrap Icons, and JavaScript**.  
+A **music player web app** built with **HTML, TailwindCSS, Bootstrap Icons, and JavaScript**.  
 It features playlist management, song controls, progress tracking, volume adjustment, and like functionality – all in one sleek UI.  
 
 ---
