@@ -213,8 +213,6 @@ volumeSlider.addEventListener('input', () => {
 ///volumeSlider end////
 
 
-
-
 ////play by click start///
 allFigures.forEach((fig, i) => {
     fig.addEventListener("click", (e) => {

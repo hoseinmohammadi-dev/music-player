@@ -4,4 +4,12 @@
     .transition-base {
         @apply transition-all duration-300 ease-in-out;
     }
+
+    .menu-children {
+        @apply flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer;
+    }
+
+    .top-for-you-children {
+        @apply flex w-[100%] md:w-[40%] justify-between;
+    }
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -12,31 +11,30 @@
 
 <body>
     <main class="flex relative ">
-        <section id="menu"
-            class="hidden lg:flex w-[20%] h-[calc(100vh-75px)] sticky top-0 flex-col items-start p-5 bg-black">
+        <section id="menu" class="hidden lg:flex w-[20%] h-[calc(100vh-75px)] sticky top-0 flex-col items-start p-5 bg-black">
             <img src="icon/svgexport-1.svg" alt="">
             <div class="w-full text-gray-300 mt-8 space-y-4">
-                <div class="flex gap-4 items-center p-2 bg-[#afaaaa1e] hover:bg-[#afaaaa1e] cursor-pointer">
+                <div class="menu-children bg-[#afaaaa1e]">
                     <img src="icon/svgexport-2.svg" alt="">
                     <p>Home</p>
                 </div>
-                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                <div class="menu-children">
                     <img src="icon/svgexport-4.svg" alt="">
                     <p>Browse</p>
                 </div>
-                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                <div class="menu-children">
                     <img src="icon/svgexport-6.svg" alt="">
                     <p>Search</p>
                 </div>
-                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                <div class="menu-children">
                     <img src="icon/svgexport-8.svg" alt="">
                     <p>Event</p>
                 </div>
-                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                <div class="menu-children">
                     <img src="icon/svgexport-11.svg" alt="">
                     <p>Liked songs</p>
                 </div>
-                <div class="flex gap-4 items-center p-2 hover:bg-[#afaaaa1e] cursor-pointer">
+                <div class="menu-children">
                     <img src="icon/svgexport-13.svg" alt="">
                     <p>Podcasts</p>
                 </div>
@@ -50,25 +48,18 @@
                     </div>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                    <a href="https://www.instagram.com/hoseinmdev" target="_blank"
-                        class="text-gray-800 hover:text-pink-500 transition-colors">
+                    <a href="https://www.instagram.com/hoseinmdev" target="_blank" class="text-gray-800 hover:text-pink-500 transition-colors">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/hoseinmohammadi-dev" target="_blank"
-                        class="text-gray-800 hover:text-blue-700 transition-colors">
+                    <a href="https://www.linkedin.com/in/hoseinmohammadi-dev" target="_blank" class="text-gray-800 hover:text-blue-700 transition-colors">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a href="https://github.com/hoseinmohammadi-dev" target="_blank"
-                        class="text-gray-800 hover:text-black transition-colors">
+                    <a href="https://github.com/hoseinmohammadi-dev" target="_blank" class="text-gray-800 hover:text-black transition-colors">
                         <i class="bi bi-github"></i>
                     </a>
                 </div>
-
             </div>
         </section>
-
-
-
 
         <section id="main-section" class="w-full lg:w-[80%] bg-gray-950 p-5">
             <div id="play-list" class="text-gray-300">
@@ -96,6 +87,7 @@
                     </figure>
                 </div>
             </div>
+
             <div id="play-list2" class="text-gray-300 mt-10">
                 <h2 class="text-3xl mb-4">Best New Releases</h2>
                 <div class="flex gap-4 *:w-[200px] *:cursor-pointer *:hover:opacity-70">
@@ -128,7 +120,7 @@
                 <div id="top-for-your" class="text-gray-300 mt-10">
                     <h2 class="text-3xl mb-4">Top For Your</h2>
                     <div class="flex justify-start flex-wrap *:hover:bg-gray-900 *:p-2">
-                        <div class="flex w-[100%] md:w-[40%] justify-between lg:mr-10">
+                        <div class="top-for-you-children lg:mr-10">
                             <div class="flex gap-2">
                                 <img src="img/biEhsas.jpg" alt="" class="w-15">
                                 <div>
@@ -138,7 +130,7 @@
                             </div>
                             <img src="icon/svgexport-36.svg" alt="" class="like-btn cursor-pointer w-[20px]">
                         </div>
-                        <div class="flex w-[100%] md:w-[40%] justify-between">
+                        <div class="top-for-you-children">
                             <div class="flex gap-2">
                                 <img src="img/dobare.jpg" alt="" class="w-15">
                                 <div>
@@ -148,7 +140,7 @@
                             </div>
                             <img src="icon/svgexport-36.svg" alt="" class="like-btn cursor-pointer w-[20px]">
                         </div>
-                        <div class="flex w-[100%] md:w-[40%] justify-between lg:mr-10">
+                        <div class="top-for-you-children lg:mr-10">
                             <div class="flex gap-2">
                                 <img src="img/pishkesh.jpg" alt="" class="w-15">
                                 <div>
@@ -158,7 +150,7 @@
                             </div>
                             <img src="icon/svgexport-36.svg" alt="" class="like-btn cursor-pointer w-[20px]">
                         </div>
-                        <div class="flex w-[100%] md:w-[40%] justify-between">
+                        <div class="top-for-you-children">
                             <div class="flex gap-2">
                                 <img src="img/yadegary.jpg" alt="" class="w-15">
                                 <div>
@@ -168,7 +160,7 @@
                             </div>
                             <img src="icon/svgexport-36.svg" alt="" class="like-btn cursor-pointer w-[20px]">
                         </div>
-                        <div class="flex w-[100%] md:w-[40%] justify-between">
+                        <div class="top-for-you-children">
                             <div class="flex gap-2">
                                 <img src="img/yaChi.jpg" alt="" class="w-15">
                                 <div>
@@ -206,8 +198,7 @@
     </main>
 
     <!-- fixed player start -->
-    <section id="audio-player"
-        class="fixed left-0 bottom-0 z-[100] w-full h-[75px] flex justify-center lg:justify-between items-center p-5 bg-gray-800">
+    <section id="audio-player" class="fixed left-0 bottom-0 z-[100] w-full h-[75px] flex justify-center lg:justify-between items-center p-5 bg-gray-800">
         <div id="mini-info-music" class="hidden lg:flex justify-start items-center gap-2 w-[270px]">
             <img src="icon/d93b93fbc781362.jpg" alt="audio picture" id="info-img" class="w-[60px] h-[60px]">
             <div class="text-sm text-white">
@@ -225,12 +216,9 @@
             </div>
             <div class="flex justify-center items-center gap-3 text-gray-300 text-sm">
                 <p id="duration-time">1:01</p>
-                <div id="progress-detail"
-                    class="group w-[240px] sm:w-[380px] lg:w-[420px] h-[6px] bg-gray-600 rounded-3xl transition duration-500 ease-in-out ">
-                    <span id="progress-bar"
-                        class="flex relative w-0 h-full bg-gray-300 group-hover:bg-red-700 rounded-3xl transition duration-300 ease-in-out">
-                        <span
-                            class="opacity-0 group-hover:opacity-100 absolute -right-1 top-[-3.5px] w-[12px] h-[12px] rounded-full bg-gray-300 transition duration-300 ease-in-out"></span>
+                <div id="progress-detail" class="group w-[240px] sm:w-[380px] lg:w-[420px] h-[6px] bg-gray-600 rounded-3xl transition duration-500 ease-in-out ">
+                    <span id="progress-bar" class="flex relative w-0 h-full bg-gray-300 group-hover:bg-red-700 rounded-3xl transition duration-300 ease-in-out">
+                        <span class="opacity-0 group-hover:opacity-100 absolute -right-1 top-[-3.5px] w-[12px] h-[12px] rounded-full bg-gray-300 transition duration-300 ease-in-out"></span>
                     </span>
                 </div>
                 <p id="final-time">1:01</p>
@@ -245,5 +233,4 @@
 </body>
 <script src="js/playList.js"></script>
 <script src="js/script.js"></script>
-
 </html>
