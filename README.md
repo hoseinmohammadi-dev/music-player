@@ -1,11 +1,11 @@
 # 🎵 Radio Javan – Music Player  
-
-[Live Demo](https://hoseinmohammadi-dev.github.io/music-player/)
-
 <img width="1919" height="866" alt="Image" src="https://github.com/user-attachments/assets/81019aa3-d170-4f7e-8513-27995095409c" /> 
 
----
 
+## 💻 Live Demo
+[Live Demo](https://hoseinmohammadi-dev.github.io/music-player/)
+
+---
 ## 📖 About  
 
 A **music player web app** built with **HTML, TailwindCSS, Bootstrap Icons, and JavaScript**.  
